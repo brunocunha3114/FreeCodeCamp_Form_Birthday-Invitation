@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="https://spaces-cdn.clipsafari.com/xkbmv7qgmhmv7pnyxwwrk2q0dt7g" type="image/x-icon"/>
+    <title>Birthday Invitation</title>
+    <h1 id="title">Birthday Invitation</h1>
+     <p id="description">Hey!!! Nice to have you on my birthday party!! But first answer some questions below! &#129395 </p>
+  </head>
+  <link rel="stylesheet" href="FreeCodeCamp-FormProject.css">
+   <body>
+    <main>
+        <form id="survey-form">
+          
+          <!-- Name -->
+          <fieldset>
+          <label id="name-label" for="name">Your favorite name:
+          <input type="text" id="name" name="name" required placeholder="The Big Joe">
+          </label>         
+          <p class="small-comment">The one I will use to call you &#128578</p>
+          </fieldset>
+
+          <!-- Email -->
+          <fieldset>
+          <label id="email-label" for="email">Your favorite email:
+          <input type="email" id="email" name="email" required placeholder="pictures@TheBigJoe.com">
+          </label>          
+          <p class="small-comment">The email where you want to receive the party pictures &#128526 </p>
+          </fieldset>
+
+          <!-- Age -->
+          <fieldset>
+          <label id="age-label" for="age">How old are you:
+          <input type="number" id="age" name="age" required min="16" max="99" placeholder="20"> 
+          </label>
+          <p class="small-comment">Remember you need to be at least 16 years old &#128521 </p>
+          </fieldset>
+
+          <!-- Phone Number -->
+          <fieldset>
+          <label id="number-label" for="age">Tell me your phone number:
+          <input type="number" id="number" name="number" min="100000000" max="999999999" required placeholder="457535954">
+          </label>
+          <p class="small-comment">This will be use to tell you where is the party &#128540 </p>
+          </fieldset>
+
+          <!-- Music Style -->
+          <fieldset>
+          <label id="music-label" for="music">What's the music style you like the most:</label>
+          <select id="dropdown" name="music" class="music" required > 
+            <option value="anything">Anything</option>
+            <option value="brazilian-funk">Brazilian Funk</option>
+            <option value="country">Country</option>
+            <option value="eletroswing">Eletroswing</option>
+            <option value="funk">Funk</option>
+            <option value="hardstyle">Hardstyle</option>
+            <option value="hiphop">Hiphop</option>
+            <option value="house">House</option>
+            <option value="metallica">Metallica</option>
+            <option value="pop">Pop</option>
+            <option value="rock">Rock</option>
+            <option value="techno">Techno</option>
+            <option value="trance">Trance</option>
+            <option class= "other" value="other">Other</option> 
+            <input class="other music"  type="text" id="music" name="other" placeholder="Opera"><!-- Not Working (º - º) -->
+            <p class="small-comment">The DJ will make sure to pass the one's you most want &#129321</p>  
+          </select> 
+          </fieldset>
+
+          <!-- Dance -->
+          <fieldset>
+          <label id="dance-label" for="dance">How much do you like to dance?</label>
+          <label id="dance-label" for="dance"><input type="radio" id="dance" name="dance" value="dance" checked required>I'll dance to my grave &#128540</label>
+          <label id="dance-label" for="dance" class="minor-option"><input type="radio" id="dance" name="dance" value="dont dance" class="minor-option" >Not that  much...</label>        
+          <p class="small-comment">I know you rock doing it, I will find a big floor &#128378 </p>
+          </fieldset>
+        
+          <!-- offers -->
+          <fieldset >
+            <label for="offers">A big party can't be made alone, what can you bring to help us?</label>
+            <label for="alcohol" class="offers"><input type="checkbox" id="alcohol" value="alcohol" class="offers"> Alcohol</label>
+            <label for="beer" class="offers"><input type="checkbox" id="beer" value="beer" class="offers"> Beer</label>
+            <label for="bread" class="offers"><input type="checkbox" id="bread" value="bread" class="offers"> Bread</label>
+            <label for="candy" class="offers"><input type="checkbox" id="candy" value="candy" class="offers"> Candy</label>
+            <label for="cake" class="offers"><input type="checkbox" id="cake" value="cake" class="offers"> Cake</label>
+            <label for="fish" class="offers"><input type="checkbox" id="fish" value="fish" class="offers"> Hamburger</label>
+            <label for="meat" class="offers"><input type="checkbox" id="meat" value="meat" class="offers"> Hot Dogs</label>
+            <label for="salad" class="offers"><input type="checkbox" id="salad" value="salad" class="offers"> Salad</label>
+            <label for="snacks" class="offers"><input type="checkbox" id="snacks" value="snacks" class="offers"> Snacks</label>
+            <label for="soda" class="offers"><input type="checkbox" id="soda" value="soda" class="offers"> Soda</label>
+            <label for="water" class="offers"><input type="checkbox" id="water" value="water" class="offers"> Water</label>
+            <label for="other" class="offers"><input type="checkbox" id="other" value="other" class="offers">Other <input class="other" type="text" id="music" name="other" placeholder="marmalade"></label>
+            <p class="small-comment">You know you want to bring your pantry &#128523 </p>
+          </fieldset>
+
+          <!-- Extra Comments -->
+          <fieldset>
+          <label for="comment">Tell me anything you want in the party:
+            <textarea id="comment" placeholder="Colorful balloons &#127752"></textarea>
+          </label>
+          <p class="small-comment">Don't worry we gonna have colorful balloons &#127880</p>
+          </fieldset>
+
+        <!-- Submit -->
+        <input type="submit" id="submit" value="Let's Go !!!" class="submit"/>
+
+        </form>
+    </main>
+  </body>
+</html>
